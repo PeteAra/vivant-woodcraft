@@ -21,7 +21,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vivantwoodcraft.com"),
+  metadataBase: new URL("https://vivant-woodcraft.vercel.app"),
   title: {
     default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
@@ -33,11 +33,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     siteName: siteConfig.name,
+    url: "https://vivant-woodcraft.vercel.app",
+    images: [
+      {
+        url: "/images/og-preview.png",
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
+    images: ["/images/og-preview.png"],
   },
 };
 
