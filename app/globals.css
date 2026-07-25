@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f4ef;
+  --bg-elevated: #fffcfa;
+  --ink: #1c1917;
+  --ink-muted: #57534e;
+  --wood: #a68a64;
+  --walnut: #5c4033;
+  --stone: #8a8580;
+  --accent: #8b7355;
+  --accent-hover: #6f5c44;
+  --border: rgba(28, 25, 23, 0.1);
+  --shadow: 0 18px 50px rgba(28, 25, 23, 0.08);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-wood: var(--wood);
+  --color-walnut: var(--walnut);
+  --color-stone: var(--stone);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-cormorant);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    background-image:
+      radial-gradient(ellipse at top, rgba(166, 138, 100, 0.06), transparent 50%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background: rgba(139, 115, 85, 0.25);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-cormorant), Georgia, serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
