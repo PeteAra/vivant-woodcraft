@@ -25,6 +25,7 @@ export type ProjectBrief = {
   finish?: string;
   hardware?: string;
   molding?: string;
+  layouts?: string[];
   inspirationImageIds?: string[];
   customerNotes?: string;
   questions?: string[];

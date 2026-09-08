@@ -33,8 +33,10 @@ export async function POST(req: Request) {
     console.info("[consultation]", {
       name,
       email,
+      source: (body as { source?: string }).source ?? "contact",
       hasJourney: Boolean(body.journey),
       hasBrief: Boolean(brief),
+      brief,
       at: new Date().toISOString(),
     });
 
