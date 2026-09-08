@@ -53,6 +53,12 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/trade"
+            className="text-sm text-ink-muted hover:text-ink transition-colors tracking-wide"
+          >
+            Trade
+          </Link>
           <Button href="/contact" className="!py-2.5 !px-5 text-xs uppercase tracking-[0.14em]">
             Consultation
           </Button>
@@ -85,6 +91,13 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href="/trade"
+              className="text-ink-muted"
+              onClick={() => setOpen(false)}
+            >
+              Trade Partners
+            </Link>
             <Link
               href="/design-journey"
               className="text-ink-muted pt-2"

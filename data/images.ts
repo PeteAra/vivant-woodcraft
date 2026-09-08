@@ -44,4 +44,9 @@ export const images = {
     alt: "Refined living space with architectural woodwork",
     credit: "Unsplash",
   },
+  trade: {
+    src: u("photo-1503387762-592deb58ef4e", 2000),
+    alt: "Precision architectural millwork and construction craftsmanship",
+    credit: "Unsplash",
+  },
 } as const satisfies Record<string, ImageAsset>;

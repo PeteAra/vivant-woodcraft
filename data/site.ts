@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Vivant",
   tagline: "Premium Custom Woodcraft for Distinctive Homes",
   description:
-    "Heirloom-quality custom cabinetry and architectural millwork for discerning homeowners in Credit River, Minnesota and the Twin Cities.",
+    "Heirloom-quality custom cabinetry and architectural millwork for private clients and trade partners in Credit River, Minnesota and the Twin Cities.",
   location: {
     city: "Credit River",
     state: "Minnesota",
@@ -53,6 +53,8 @@ export const siteConfig = {
     { label: "Contact", href: "/contact" },
   ],
   footerLinks: [
+    { label: "Private Clients", href: "/private" },
+    { label: "Trade Partners", href: "/trade" },
     { label: "Design Journey", href: "/design-journey" },
     { label: "Design Consultant", href: "/consult" },
     { label: "Gallery", href: "/gallery" },

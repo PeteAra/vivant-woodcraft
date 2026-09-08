@@ -6,7 +6,9 @@ import { usePathname } from "next/navigation";
 /** Subtle opt-in affordance — never auto-opens a chat */
 export function ConsultAffordance() {
   const pathname = usePathname();
-  if (pathname === "/consult") return null;
+  if (pathname === "/" || pathname === "/consult" || pathname === "/trade") {
+    return null;
+  }
 
   return (
     <Link

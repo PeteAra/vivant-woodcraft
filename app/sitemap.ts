@@ -6,6 +6,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.vivantwoodcraft.com";
   const staticRoutes = [
     "",
+    "/private",
+    "/trade",
     "/about",
     "/portfolio",
     "/services",
@@ -20,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.7,
+    priority: path === "" || path === "/private" ? 1 : 0.7,
   }));
 
   const projectRoutes = projects.map((p) => ({
