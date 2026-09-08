@@ -99,11 +99,11 @@ export function Header() {
               Trade Partners
             </Link>
             <Link
-              href="/design-journey"
+              href="/private"
               className="text-ink-muted pt-2"
               onClick={() => setOpen(false)}
             >
-              Design Journey
+              Build Your Vision
             </Link>
             <Link
               href="/consult"

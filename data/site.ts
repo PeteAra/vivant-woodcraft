@@ -55,7 +55,6 @@ export const siteConfig = {
   footerLinks: [
     { label: "Private Clients", href: "/private" },
     { label: "Trade Partners", href: "/trade" },
-    { label: "Design Journey", href: "/design-journey" },
     { label: "Design Consultant", href: "/consult" },
     { label: "Gallery", href: "/gallery" },
     { label: "Testimonials", href: "/testimonials" },
